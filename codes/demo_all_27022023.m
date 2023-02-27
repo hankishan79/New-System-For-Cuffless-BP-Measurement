@@ -5,7 +5,7 @@ close all;
 clc;
 sonuc=[];
 addpath('..\matlab_data/'); 
-
+addpath('..\feature extraction');
 s_sbp=[]
 mae_sbp=[]
 d_dbp=[]
@@ -21,9 +21,9 @@ m_sbp=[];
 
 m_sstd=[];
 m_dstd=[];
-
+% for k=1:21,
 for k=1:22,
-f=load ('new_mm_1_min.txt');
+f=load ('extracted_f_1_min.txt');
 fy=f;
 rng('shuffle') % For reproducibility
 rng('shuffle') % For reproducibility
@@ -34,11 +34,12 @@ grp2=[];
 cnt2=[];
 
 egitim=[1:22]';
+
+% egitim(k:k+1)=[];
 egitim(k)=[];
-
 % test data group
+% test=[k k+1];
 test=[k];
-
 egit=[];
 tst=[];
 idx_train=[];
@@ -97,9 +98,9 @@ m_sstd=[m_sstd;std(SBP)];
 
 end
 
+% for k=1:21,
 for k=1:22,
-
-f=load ('new_mm_1_min.txt');
+f=load ('extracted_f_1_min.txt');
 fy=f;
 rng('shuffle') % For reproducibility
 rng('shuffle') % For reproducibility
@@ -110,11 +111,11 @@ grp2=[];
 cnt2=[];
 
 egitim=[1:22]';
+% egitim(k:k+1)=[];
 egitim(k)=[];
-
 % test data group
-test=[k];
-
+% test=[k k+1];
+test = [k];
 egit=[];
 tst=[];
 idx_train=[];
