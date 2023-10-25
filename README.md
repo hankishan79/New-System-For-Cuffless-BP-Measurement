@@ -36,3 +36,10 @@ We welcome contributions from the open-source community. If you find any issues 
 
 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+For Citation
+H. Ankishan, Fikret Ari, Haydar Celik, Blaise B. Frederick, Lia M. Hocke, Sinem Burcu Erdogan, Mehmet Altay Unal,
+A new system for cuffless blood pressure measurement, Applied Acoustics, Volume 212, 2023, 109615,
+ISSN 0003-682X,
+https://doi.org/10.1016/j.apacoust.2023.109615.
+(https://www.sciencedirect.com/science/article/pii/S0003682X23004139)
